@@ -26,6 +26,9 @@ const string LABEL_PHRASE_CONFIRM = "You entered";
 
 // Function prototypes (if any)
 
+// COMPILE and RUN TESTS and CLEANUP
+// g++ main.cpp && for x in test*txt; do echo -e "\n\nTEST: $x"; ./a.out < $x; done; rm ./a.out
+
 
 // Main function
 // https://en.cppreference.com/w/cpp/language/main_function.html
@@ -71,14 +74,14 @@ int main() {
       cout << PHRASES_EQUAL;
     } else if(phrase_2_in_phrase_1) {
       cout << phrase_2 << endl;
-      cout << " " << LABEL_FOUND_IN << endl;
+      cout << LABEL_FOUND_IN << endl;
       cout << phrase_1 << endl;
-      cout << substring_from_first_match_to_end;
+      cout << substring_from_first_match_to_end << endl;
     } else if(phrase_1_in_phrase_2) {
       cout << phrase_1 << endl;
-      cout << " " << LABEL_FOUND_IN << endl;
+      cout << LABEL_FOUND_IN << endl;
       cout << phrase_2 << endl;
-      cout << substring_from_first_match_to_end;
+      cout << substring_from_first_match_to_end << endl;
     } else {
       cout << NO_MATCH;
     }    
